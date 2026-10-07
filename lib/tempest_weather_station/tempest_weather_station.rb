@@ -4,7 +4,7 @@ module Plugins
     BASE_URL = 'https://swd.weatherflow.com/swd/rest'.freeze
 
     def locals
-      { temperature:, forecast:, weather_image:, today_weather_image:, tomorrow_weather_image:, today_conditions:, right_now_conditions:, humidity:, feels_like:, refreshed_at: }
+      { temperature:, forecast:, weather_image:, today_weather_image:, tomorrow_weather_image:, today_conditions:, right_now_conditions:, humidity:, feels_like:, refreshed_at:, tempest_data: forecast_data }
     end
 
     class << self
